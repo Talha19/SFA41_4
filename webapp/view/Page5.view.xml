@@ -1,0 +1,81 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.smartFactory.controller.Page5" xmlns:uxap="sap.uxap" xmlns="sap.m">
+    <uxap:ObjectPageLayout showTitleInHeaderContent="true" showHeaderContent="true" showAnchorBar="true" showFooter="true" subSectionLayout="TitleOnTop">
+        <uxap:headerContent>
+            <VBox alignItems="Stretch" direction="Column" fitContainer="false" width="auto" height="auto" justifyContent="Start" renderType="Div" visible="true" displayInline="false">
+                <items>
+                    <Link text="+33 6 1555 5353" textAlign="Begin" width="auto" target="_blank" wrapping="false" enabled="true" visible="true" emphasized="false" subtle="false"/>
+                    <Link text="test@sap.com" textAlign="Begin" width="auto" target="_blank" wrapping="false" enabled="true" visible="true" emphasized="false" subtle="false"/>
+                </items>
+                <layoutData/>
+            </VBox>
+            <Label text="Hello and Welcome!" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+        </uxap:headerContent>
+        <uxap:headerTitle>
+            <uxap:ObjectPageHeader objectImageURI="/build/uilibraries/content/static/image-canvas.svg" objectTitle="Title" objectSubtitle="Subtitle" headerDesign="Light" objectImageShape="Square" isObjectIconAlwaysVisible="false" isObjectTitleAlwaysVisible="false" isObjectSubtitleAlwaysVisible="false" isActionAreaAlwaysVisible="true">
+                <uxap:actions>
+                    <Button text="Action Button" type="Transparent" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                </uxap:actions>
+                <uxap:breadCrumbsLinks/>
+                <uxap:navigationBar/>
+            </uxap:ObjectPageHeader>
+        </uxap:headerTitle>
+        <uxap:sections>
+            <uxap:ObjectPageSection showTitle="true" title="Status Rückmeldungen" titleUppercase="true" visible="true">
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection title="Status Rückmeldungen" mode="Expanded">
+                        <uxap:blocks>
+                            <VBox alignItems="Center" direction="Column" fitContainer="true" width="auto" height="auto" justifyContent="Center" renderType="Div" visible="true" displayInline="false">
+                                <items>
+                                    <VBox alignItems="Start" direction="Column" fitContainer="true" width="100%" renderType="Div" visible="true" height="auto">
+                                        <items>
+                                            <HBox alignItems="Center" direction="Row" fitContainer="true" width="100%" height="auto" justifyContent="Center" renderType="Div" visible="true" displayInline="false">
+                                                <items>
+                                                    <Button text="Item 1" type="Default" iconFirst="true" width="30em" enabled="true" visible="true" iconDensityAware="false" class="sapUiSmallMargin"/>
+                                                    <Button text="Item 1" type="Default" iconFirst="true" width="30em" enabled="true" visible="true" iconDensityAware="false" class="sapUiSmallMargin"/>
+                                                    <Button text="Item 1" type="Default" iconFirst="true" width="30em" enabled="true" visible="true" iconDensityAware="false" class="sapUiSmallMargin"/>
+                                                </items>
+                                                <layoutData/>
+                                            </HBox>
+                                            <HBox alignItems="Center" direction="Row" fitContainer="true" width="100%" height="auto" justifyContent="Center" renderType="Div" visible="true" displayInline="false">
+                                                <items>
+                                                    <Button text="Item 4" type="Default" iconFirst="true" width="30em" enabled="true" visible="true" iconDensityAware="false" class="sapUiSmallMargin"/>
+                                                    <Button text="Item 1" type="Default" iconFirst="true" width="30em" enabled="true" visible="true" iconDensityAware="false" class="sapUiSmallMargin"/>
+                                                    <Button text="Item 1" type="Default" iconFirst="true" width="30em" enabled="true" visible="true" iconDensityAware="false" class="sapUiSmallMargin"/>
+                                                </items>
+                                                <layoutData/>
+                                            </HBox>
+                                        </items>
+                                        <layoutData/>
+                                    </VBox>
+                                </items>
+                                <layoutData/>
+                            </VBox>
+                        </uxap:blocks>
+                        <uxap:moreBlocks/>
+                        <uxap:actions/>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+                <uxap:customAnchorBarButton/>
+            </uxap:ObjectPageSection>
+            <uxap:ObjectPageSection showTitle="true" title="Page Section Title" titleUppercase="true" visible="true">
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection title="Sub Section Title" mode="Expanded">
+                        <uxap:blocks/>
+                        <uxap:moreBlocks/>
+                        <uxap:actions/>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+                <uxap:customAnchorBarButton/>
+            </uxap:ObjectPageSection>
+        </uxap:sections>
+        <uxap:footer>
+            <OverflowToolbar width="100%" height="46px" design="Auto" enabled="true" visible="true">
+                <content>
+                    <ToolbarSpacer width="0.5px"/>
+                    <Button text="Zurück" type="Back" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress"/>
+                    <OverflowToolbarButton text="Action" type="Default" icon="sap-icon://action" iconFirst="true" width="auto" enabled="true" visible="false" iconDensityAware="false"/>
+                </content>
+            </OverflowToolbar>
+        </uxap:footer>
+    </uxap:ObjectPageLayout>
+</mvc:View>
